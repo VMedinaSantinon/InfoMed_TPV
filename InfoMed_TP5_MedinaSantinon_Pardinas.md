@@ -9,6 +9,7 @@
 - Lazarino, Carlos
 - Spessotti, Ingrid Celia
 - Berrino, Eugenia Camila
+- Piacentino Castaño, Melina
 
 ### Alumnas:
 - Pardiñas, Victoria - 60015
@@ -43,7 +44,7 @@ El siguiente diagrama se desarrolló en LucidChart donde se señalaron las Prima
 
 ### 3. Armar el modelo relacional de la base de datos.
 
-![](imagenes/modeelo_relacional.png)
+![](imagenes/modelo_relacional.png)
 
 En la figura se representa el modelo relacional, con relaciones 1 a muchos (1-N) como:
 
@@ -310,6 +311,7 @@ Análisis:
 
 En cuanto a la distribución de pacientes por ciudad, Buenos Aires es la ciudad con la mayor cantidad de pacientes atendidos, representando el 34.78% del total, es decir, 8 pacientes. Le siguen Córdoba con el 26.09% del total, es decir, 6 pacientes, y Rosario con el 17.39%, que representa 4 pacientes, al igual que Mendoza. La ciudad de Santa Fe presenta la menor cantidad de pacientes, con un 4.35%, lo que representa 1 único paciente. Este patrón sugiere que la mayoría de los pacientes provienen de grandes centros urbanos como Buenos Aires y Córdoba, lo cual podría estar vinculado a la mayor disponibilidad de servicios de salud en esas áreas.
 Este indicador nos permite saber cuáles centros son los más demandados, y consecuentemente disponer las instalaciones para la capacidad prevista.
+
 ![](imagenes/pacientes_por_ciudad.png)
 
 
@@ -328,15 +330,18 @@ Esto podría indicar que algunos médicos están sobrecargados, lo que puede imp
 Este indicador nos permite medir la relación entre la cantidad de consultas en función a los medicos, relacionado con su especialidad, esto nos permite ver si la mayor cantidad de consultas se correlaciona con un solo medico en particular o si todos los medicos de esa especialidad se encuentran igual de demandados.
 Esto nos da la oportunidad de mejorar la disponibilidad de los profesionales, de manera que se distribuya equitativamente la carga, y saber que especialidades se encuentran sin tener consultas.
 También sirve para identificar oportunidades de mejora en la atención de algunos medicos, que no tienen consultas pero su especialidad si es demandada.
+
 ![](imagenes/carga_trabajo.png)
 
 
 Respecto a la frecuencia de consultas por especialidad, Dermatología es la especialidad con mayor número de consultas, con 25 consultas, representando el 40.98%. Le sigue Pediatría con 19 consultas, que equivale al 31.15%. Las especialidades de Cardiología, Neurología y Clínica General tienen frecuencias menores, con 11.48%, 5.56% y 5.56%, respectivamente. Esto sugiere una mayor demanda de atención en el área de Dermatología, lo que podría estar relacionado con el aumento de consultas por afecciones dermatológicas o la disponibilidad de profesionales en esta área.
 Este indicador, en conjunto con el de medicamentos, nos permite analizar el perfil de paciente que acude al centro médico disponer el mismo para atender las necesidades más demandadas, a su vez, nos permite dilucidar si el consumo de medicamentos está o no relacionado con las consultas más demandadas, en nuestro caso el medicamento/insumo más demandado es la Férula, pero el mayor número de consultas se registra en Dermatología, por lo que no necesariamente está relacionado, por lo que los visitadores médicos no necesariamente deben estar orientados a prestar servicio a los sectores con mayor número de consultas, ya que no son los que recetan más medicamentos
+
 ![](imagenes/freq_por_especialidad.png)
 
 
 En cuanto a la distribución de pacientes por sexo, se observa que hay una distribución relativamente equilibrada entre pacientes de sexo femenino y masculino. Doce pacientes, que representan el 52.17%, son mujeres, mientras que once pacientes, que representan el 47.83%, son hombres. Esta paridad sugiere que no existen grandes diferencias en el género de los pacientes que acuden a consultas.
 Este indicador nos resulta interesante para determinar si la baja demanda de consultas en especialistas en otros sectores, como puede ser ginecología y/o urología, tiene que ver con los pacientes que acuden a nuestro centro, o si puede estar relacionado con los profesionales o las necesidades que tienen.
 Finalmente, en la tabla de recetas y diagnósticos asociados, se observan ejemplos de diagnósticos, junto con sus prescripciones y los datos de los pacientes y médicos de cada consulta. Esto nos sirve para complementar la tabla de medicamentos, y profesionales, otorgando un indicador global. 
+
 ![](imagenes/id_sexo.png)
